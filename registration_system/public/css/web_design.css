@@ -1,0 +1,215 @@
+/* FOR HOMEPAGE and About */
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+  
+body, h1, h2, p, table, th, td {
+    font-family: 'Quicksand', sans-serif;
+}
+  
+  /* Body styles */
+.body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #feeff6; 
+    color: #2a2a2a; 
+}
+
+  /* Header styles */
+.header {
+    background-color: #b22d64; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+  
+.header-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; 
+    font-size: 2.5rem; 
+    padding: 10px; 
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+  
+  /* Navigation styles */
+.nav {
+    text-align: center; 
+}
+  
+.nav-list {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+  
+.nav-item {
+    margin: 0 10px; 
+}
+  
+.nav-link {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    background-color: #ce638f; 
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+  
+  /* Hover effect */
+.nav-link:hover {
+    background-color: #e07da3; 
+    transform: scale(1.05); 
+}
+  
+.nav-link1 {
+    color: #ce638f;
+}
+  
+.nav-link1:hover {
+    text-decoration: underline;
+}
+  
+.nav-item2 {
+    display: inline;
+    margin-right: 20px;
+    flex-direction: row;
+}
+  
+.mainpage-image { 
+    width: 630px;  
+    height: 442.666666667px;
+} 
+  
+  /* Main content styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; 
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+}
+  
+.main-heading {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; 
+    padding: 7px;
+    margin-bottom: 20px;
+    color: #2a2a2a; 
+}
+  
+.main-paragraph {
+    margin-bottom: 15px; 
+    color: #4d4d4d; 
+}
+  
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+  
+  /* Footer styles */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #b22d64; 
+    color: white;
+    width: 100%;
+}
+  
+.footer-text {
+    margin: 0;
+}
+  
+  /*for table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+  
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+  
+th {
+    background-color: #d97c9b; 
+    color: white; 
+}
+  
+tr:hover {
+    background-color: #fcf4f7; 
+}
+
+/* Style the anchor tags to look like buttons */
+.button_EDIT {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d97c9b; 
+    color: white; 
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-right: 45px;
+    margin-left: 1px;
+}
+
+.button_EDIT:hover {
+    background-color: #e07da3; 
+}
+
+.button_EDIT:active {
+    background-color: #be4171; 
+}
+
+.button_DELETE {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336; 
+    color: white; 
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button_DELETE:hover {
+    background-color: #e53935; 
+}
+
+.button_DELETE:active {
+    background-color: #c12b29; 
+}
+
+.register-button {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #b42d65; 
+    color: white;
+    border: none;
+    padding: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+  
+.register-button:hover {
+    background-color: white;
+    color: #b42d65;
+    font-weight: bold;
+    transform: scale(1.00);
+}
