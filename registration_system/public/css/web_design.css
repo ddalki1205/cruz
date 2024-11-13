@@ -142,12 +142,17 @@ th, td {
 }
   
 th {
-    background-color: #d97c9b; 
+    background-color: #b22d64; 
     color: white; 
 }
   
 tr:hover {
-    background-color: #fcf4f7; 
+    background-color: #fffafa; 
+}
+
+.actions-column {
+    width: 230px; /* Adjust this value to your preference */
+    text-align: center;
 }
 
 /* Style the anchor tags to look like buttons */
@@ -161,7 +166,7 @@ tr:hover {
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    margin-right: 45px;
+    margin-right: 25px;
     margin-left: 1px;
 }
 
@@ -176,7 +181,7 @@ tr:hover {
 .button_DELETE {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f44336; 
+    background-color: #b22d64; 
     color: white; 
     text-align: center;
     text-decoration: none; /* Remove underline */
@@ -186,11 +191,11 @@ tr:hover {
 }
 
 .button_DELETE:hover {
-    background-color: #e53935; 
+    background-color: #c14f7e; 
 }
 
 .button_DELETE:active {
-    background-color: #c12b29; 
+    background-color: #8c204d; 
 }
 
 .register-button {

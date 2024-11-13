@@ -31,7 +31,7 @@ $result = @mysqli_query($dbconnect, $q);
                             <th>Name</th>
                             <th>Email</th>
                             <th>Registered Date</th>
-                            <th>Actions</th>
+                            <th class="actions-column">Actions</th>
                         </tr>';
 
                 // Loop through each user and display their details

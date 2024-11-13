@@ -17,19 +17,19 @@ $fn = $ln = $e = $p = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Validate input fields
     if (empty($_POST['fname'])) {
-        $errors[] = 'Please input your first name.';
+        $errors[] = 'Please enter your first name.';
     } else {
         $fn = trim($_POST['fname']);
     }
 
     if (empty($_POST['lname'])) {
-        $errors[] = 'Please input your last name.';
+        $errors[] = 'Please enter your last name.';
     } else {
         $ln = trim($_POST['lname']);
     }
 
     if (empty($_POST['email'])) {
-        $errors[] = 'Please input your email.';
+        $errors[] = 'Please enter your email.';
     } else {
         $e = trim($_POST['email']);
     }
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $p = trim($_POST['psword1']);
         }
     } else {
-        $errors[] = 'Please input your password.';
+        $errors[] = 'Please enter your password.';
     }
 
     // Check if the email already exists in the database

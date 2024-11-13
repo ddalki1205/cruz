@@ -5,33 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/info-col.css"> <!-- Add this line to include advertisement CSS -->
-    
-    <title>Edit user - Website ni Cruz</title>
+
+    <title>Edit User - Website ni Cruz</title>
 
 </head>
 
 <body class="body">
-    
 <div class="wrapper">
 
     <?php include '../includes/header.php'; ?>
 
-    <div class="content-container">
-        <main class="main-content">
-            <h2 class="main-heading">Edit User</h2>
-            
+    <main class="main-content">
+    <center>    
+    <h2> Edit User Record</h2><br>
+        <?php
+			if ((isset($_GET['id'])) && (is_numeric($_GET['id']))) {
+				$id = $_GET['id']; 
+			} 
+			elseif ((isset($_POST['id'])) && (is_numeric($_POST['id']))) {
+				$id = $_POST['id'];
+			} 
+			else {
+				echo '<p class="error">This page has been accessed by mistake</p>';
+				exit();
+			}
+			require('mysqli_connect.php');
 
-    
-        </main>
+			if($_SERVER['REQUEST_METHOD'] == 'POST') {
+				$errors = array();
+				if (empty($_POST['fname'])) { #check if the fname box is empty
+					$errors[] = 'Please input your first name.';
+				} else {
+					$fn = trim($_POST['fname']);
+				}
 
-        
+				if (empty($_POST['lname'])) { #check if the lname box is empty
+					$errors[] = 'Please input your last name.';
+				} else {
+					$ln = trim($_POST['lname']);
+				}
 
-    </div>
+				if (empty($_POST['email'])) { #check if the email box is empty
+					$errors[] = 'Please input your email.';
+				}else {
+					$e = trim($_POST['email']);
+				}
+				
+				if(empty($errors)){ #if there are no errors
+					$q ="UPDATE users 
+						 SET fname='$fn', lname='$ln', email='$e' 
+						 WHERE id = '$id' 
+						 LIMIT 1";
+					$result = @mysqli_query($dbconnect, $q);
+					if (mysqli_affected_rows($dbconnect) == 1){
+						echo '<p id="user_edited">The record has been updated.</p>';
+					} else {
+						echo '<h3 class="error">The system detected no changes to User.</h3>';
+					}
+				} else {
+					echo '<p id="user_not_edited">The record was NOT updated.</p>';
+				}
+			}
+			$q = "SELECT fname, lname, email FROM users where id=$id";
+			$result = @mysqli_query($dbconnect, $q);
+			if (mysqli_num_rows($result) == 1) {
+				$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+				echo '
+				<form id="edit_form" action="edit_user.php" method="post">
+						<p><label class="label" for="fname">First Name</label>
+						<input type="text" id="fname" name="fname" size="30" maxlength="40"
+						value="'.$row["fname"].'">
+						</p>
 
-    
+						<p><label class="label" for="lname">Last Name</label>
+						<input type="text" id="lname" name="lname" size="30" maxlength="40"
+						value="'.$row["lname"].'">
+						</p>
+
+						<p><label class="label" for="email">Email Address</label>
+						<input type="text" id="email" name="email" size="30" maxlength="50"
+						value="'.$row["email"].'">
+						</p>
+
+						<p><input type="submit" id="submit" name="submit" value="Update"></p>
+						<p><a href = "register-view-users.php"><button type="button" id="go_back">Go Back</button></a></p>
+						<p><input type="hidden" name="id" value="'.$id.'"></p>
+					</form>
+				';
+			} else {
+				echo '<p class="error">This page has been accessed by mistake</p>';
+                exit();
+			}
+		?>
+    </center>
+    </main>
     <?php include '../includes/footer.php'; ?>
-</div>
 
+</div>
 </body>
 </html>
