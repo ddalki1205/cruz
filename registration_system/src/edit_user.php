@@ -11,13 +11,11 @@
 </head>
 
 <body class="body">
-<div class="wrapper">
-
     <?php include '../includes/header.php'; ?>
 
-    <main class="main-content">
-    <center>    
-    <h2> Edit User Record</h2><br>
+<div class="wrapper-edit">  
+    <main class="main-content-edit">
+        <h2> Edit User Record  </h2></center>
         <?php
 			if ((isset($_GET['id'])) && (is_numeric($_GET['id']))) {
 				$id = $_GET['id']; 
@@ -58,9 +56,9 @@
 						 LIMIT 1";
 					$result = @mysqli_query($dbconnect, $q);
 					if (mysqli_affected_rows($dbconnect) == 1){
-						echo '<p id="user_edited">The record has been updated.</p>';
+						echo '<p id="user_edited" class="message message-yehey">The record has been updated.</p>';
 					} else {
-						echo '<h3 class="error">The system detected no changes to User.</h3>';
+						echo '<h3 class="message message-error">The system detected no changes to User.</h3>';
 					}
 				} else {
 					echo '<p id="user_not_edited">The record was NOT updated.</p>';
@@ -71,33 +69,31 @@
 			if (mysqli_num_rows($result) == 1) {
 				$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 				echo '
-				<form id="edit_form" action="edit_user.php" method="post">
-						<p><label class="label" for="fname">First Name</label>
-						<input type="text" id="fname" name="fname" size="30" maxlength="40"
-						value="'.$row["fname"].'">
-						</p>
+				<form class="edit-form" action="edit_user.php" method="post">
+                    <p> <label class="label" for="fname"><br>First Name</label>
+                        <input type="text" class="input-text" name="fname" size="30" maxlength="40"
+                        value="'.$row["fname"].'"></p>
 
-						<p><label class="label" for="lname">Last Name</label>
-						<input type="text" id="lname" name="lname" size="30" maxlength="40"
-						value="'.$row["lname"].'">
-						</p>
+                    <p> <label class="label" for="lname"<br><br>Last Name</label>
+                        <input type="text" class="input-text" name="lname" size="30" maxlength="40"
+                        value="'.$row["lname"].'"></p>
 
-						<p><label class="label" for="email">Email Address</label>
-						<input type="text" id="email" name="email" size="30" maxlength="50"
-						value="'.$row["email"].'">
-						</p>
+                    <p> <label class="label" for="email"><br>Email Address</label>
+                        <input type="text" class="input-text" name="email" size="30" maxlength="50"
+                        value="'.$row["email"].'"></p><br>
 
-						<p><input type="submit" id="submit" name="submit" value="Update"></p>
-						<p><a href = "register-view-users.php"><button type="button" id="go_back">Go Back</button></a></p>
-						<p><input type="hidden" name="id" value="'.$id.'"></p>
-					</form>
+                    <p> <input type="submit" class="update-button" name="update" value="Update"></p>
+                    <p> <a href="register-view-users.php">
+                        <button type="button" class="go-back-button">Go Back</button></a></p>
+                    <p> <input type="hidden" name="id" value="'.$id.'"></p>
+                </form>
 				';
 			} else {
 				echo '<p class="error">This page has been accessed by mistake</p>';
                 exit();
 			}
 		?>
-    </center>
+    
     </main>
     <?php include '../includes/footer.php'; ?>
 
