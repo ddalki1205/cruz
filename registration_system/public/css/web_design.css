@@ -148,7 +148,7 @@ th {
 }
   
 tr:hover {
-    background-color: #fffafa; 
+    background-color: #fffafa;
 }
 
 .actions-column {
@@ -196,7 +196,45 @@ tr:hover {
 }
 
 .button_DELETE:active {
-    background-color: #8c204d; 
+    background-color: #8c204d;
+}
+
+.button-delete-yes {
+    padding: 10px 20px;
+    background-color: #b22d64; 
+    color: white; 
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-delete-yes:hover {
+    background-color: #c14f7e;
+}
+
+.button-delete-yes:active {
+    background-color: #8c204d;
+}
+
+.button-delete-yes {
+    padding: 10px 20px;
+    background-color: #b22d64; 
+    color: white; 
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-delete-yes:hover {
+    background-color: #c14f7e;
+}
+
+.button-delete-yes:active {
+    background-color: #8c204d;
 }
 
 .register-button {

@@ -16,7 +16,7 @@
     <?php include '../includes/header.php'; ?>
 
     <main class="main-content">
-    <center>    
+    <center>
     <h2> Deleting Record... </h2><br>
             <?php
                 if ((isset($_GET['id'])) && (is_numeric($_GET['id']))) {
