@@ -7,22 +7,21 @@
     <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
     <link rel="stylesheet" type="text/css" href="../public/css/info-col.css"> <!-- Add this line to include advertisement CSS -->
     
-    <title>Website ni Cruz</title>
+    <title>Admin Page</title>
 
 </head>
 
 <body class="body">
 <div class="wrapper">
 
-    <?php include '../includes/header.php'; ?>
+    <?php include '../includes/header-admin.php'; ?>
 
     <div class="content-container">
         <main class="main-content">
             <h2 class="main-heading">This is the Homepage</h2>
-            <p class="main-paragraph">Note! the log in button will direct you to members page!<br>Click this temporary button to go to the ff:</p>
-            <a href="admin-page.php" target="_blank" class="ad-button">Admin page</a>
-            <a href="members-page.php" target="_blank" class="ad-button">Members page</a>
-            <br>
+            <p class="main-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Fermentum diam fermentum eros ornare
+              magna adipiscing. Senectus malesuada viverra dictum dis faucibus vehicula est est.</p>
+
             <img src="../public/images/art.png" alt="art" class="mainpage-image">
         </main>
 

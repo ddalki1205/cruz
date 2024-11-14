@@ -87,6 +87,17 @@ body, h1, h2, p, table, th, td {
 } 
   
   /* Main content styles */
+
+.mem-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; 
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    align-items: flex-start;
+}
+
 .main-content {
     flex: 1;
     padding: 20px;

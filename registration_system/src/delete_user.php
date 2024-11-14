@@ -61,7 +61,7 @@
                         echo "<h3>Are you sure you want to delete $row[0]?</h3>";
                         echo '
                         <form action="delete_user.php" method="post">
-                            <input id="submit-yes" type="submit" name="sure" value="Yes">
+                            <input class="button-delete-id="submit-yes" type="submit" name="sure" value="Yes">
                             <input id="submit-no" type="submit" name="sure" value="No">
                             <input type="hidden" name="id" value="' . $id . '">
                         </form>
