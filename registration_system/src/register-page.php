@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $hashedPassword = password_hash($p, PASSWORD_DEFAULT);
 
             // Prepare and execute the query to insert the user data
-            $q = "INSERT INTO users (fname, lname, email, password, registration_date) 
+            $q = "INSERT INTO users (fname, lname, email, password, registration_date)
                   VALUES ('$fn', '$ln', '$e', '$hashedPassword', NOW())";
 
             $result = @mysqli_query($dbconnect, $q);
@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <div class="container">
         <h1 class="form-title">Register</h1>
-        
+
         <form action="register-page.php" method="post"> 
             <label for="fname">First Name:</label>
             <input type="text" name="fname" id="fname" class="input-field" value="<?php if (isset($fn)) echo htmlspecialchars($fn); ?>"><br>
