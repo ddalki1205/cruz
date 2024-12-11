@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    <div style="margin-bottom: 20px;"> <!-- Cancel Login Button -->
-        <a href="../public/index.php" class="cancel-button">Cancel Changes</a> 
+    <div style="margin-bottom: 20px;"> <!-- Cancel Changes Button -->
+        <a href="javascript:window.history.back();" class="cancel-button">Cancel Changes</a> 
     </div>
+
 
     <div class="container">
         <h1 class="form-title">Change Password</h1>
