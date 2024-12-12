@@ -1,9 +1,16 @@
+# Enable mod_rewrite
 RewriteEngine On
 
+# Set the public directory as the base directory
+RewriteBase /registration_system/
+
+# Remove .php extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -footer
-RewriteRule ^([^/]+)$ $1.php
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^/]+)$ public/$1.php [L]
 
-RewriteRule ^$ index.php
+# Redirect to index.php if no file is specified (optional)
+RewriteRule ^$ public/index.php [L]
 
-RewriteRule ^(includes|src)/ - 
+# Prevent access to sensitive folders
+RewriteRule ^(includes|src)/ - [F,L]
