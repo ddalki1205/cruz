@@ -21,7 +21,7 @@
 <body class="body">
     <?php include '../includes/header.php'; ?>
 
-<div class="wrapper-edit">  
+<div class="wrapper-edit">
     <main class="main-content-edit">
         <h2> Edit User Record  </h2></center>
 

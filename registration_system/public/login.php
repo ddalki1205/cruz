@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/registration.css">
     <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <title>LogIn Page</title>
+    <title>Log In Page</title>
 </head>
 
 <body>
