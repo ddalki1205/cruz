@@ -23,31 +23,33 @@
 ```
 registration_system
 ├── includes
+│   ├── about_members.php
+│   ├── about_us.php
+│   ├── ad-col.php
 │   ├── footer.php
 │   ├── header-admin.php
 │   ├── header-mem.php
 │   ├── header.php
-│   ├── info-col.php
 │   ├── nav-foradmin.php
 │   ├── nav-formem.php
 │   └── nav.php
 ├── public
 │   ├── admin-page.php
 │   ├── css
-│   │   ├── info-col.css
+│   │   ├── ad-col.css
 │   │   ├── registration.css
 │   │   ├── registration_thanks.css
 │   │   └── web_design.css
 │   ├── images
 │   │   ├── art.png
+│   │   ├── dashboard.jpg
+│   │   ├── twice.jpeg
 │   │   └── Twice.png
 │   ├── index.php
 │   ├── login.php
 │   ├── members-page.php
 │   └── old-login-draft.php
 └── src
-    ├── about_members.php
-    ├── about_us.php
     ├── change-password.php
     ├── delete_user.php
     ├── edit_user.php
@@ -56,4 +58,5 @@ registration_system
     ├── register-thanks.php
     ├── register-view-users.php
     └── search.php
+
 ```
