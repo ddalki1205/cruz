@@ -1,4 +1,3 @@
-# Enable mod_rewrite
 RewriteEngine On
 
 # Set the public directory as the base directory
@@ -9,7 +8,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^/]+)$ public/$1.php [L]
 
-# Redirect to index.php if no file is specified (optional)
+# Redirect to index.php if no file is specified
 RewriteRule ^$ public/index.php [L]
 
 # Prevent access to sensitive folders
