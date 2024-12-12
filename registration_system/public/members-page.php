@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION['user_level']) || ($_SESSION['user_level'] != 1)) {
+        header(header: "Location: login.php");
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/info-col.css"> <!-- Add this line to include advertisement CSS -->
+    <link rel="stylesheet" type="text/css" href="../public/css/ad-col.css"> <!-- Add this line to include advertisement CSS -->
     
     <title>Members Page</title>
 
@@ -24,7 +32,7 @@
         </main>
 
     </div>
-    <?php include '../src/about_members.php'; ?>
+    <?php include '../includes/about_members.php'; ?>
 
     <?php include '../includes/footer.php'; ?>
 

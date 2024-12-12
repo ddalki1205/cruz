@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION['user_level']) || ($_SESSION['user_level'] != 1)) {
+        header(header: "Location: ../public/login.php");
+        exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +21,7 @@
 <body class="body">
 <div class="wrapper">
 
-    <?php include '../includes/header.php'; ?>
+    <?php include '../includes/header-admin.php'; ?>
 
     <main class="main-content">
     <center>

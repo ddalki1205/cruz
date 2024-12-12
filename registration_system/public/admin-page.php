@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['user_level']) || $_SESSION['user_level'] != 1) {
+        header("Location: login.php");
+        exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/info-col.css"> <!-- Add this line to include advertisement CSS -->
+    <link rel="stylesheet" type="text/css" href="../public/css/ad-col.css"> <!-- Add this line to include advertisement CSS -->
 
     <title>Admin Page</title>
 
@@ -18,20 +26,20 @@
 
     <div class="content-container">
         <main class="main-content">
-            <h2 class="main-heading">This is the Homepage</h2>
-            <p class="main-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Fermentum diam fermentum eros ornare
-              magna adipiscing. Senectus malesuada viverra dictum dis faucibus vehicula est est.</p>
 
-            <img src="../public/images/art.png" alt="art" class="mainpage-image">
+            <center>
+            <h2 class="main-heading">Admin Dashboard</h2>
+            <p class="main-paragraph">Updates for your website!</p>
+            <img src="../public/images/dashboard.jpg" alt="dashboard" class="mainpage-image">
+            </center>
+
         </main>
 
-        <!-- Advertisement Section -->
-        <?php include '../includes/info-col.php'; ?>
 
     </div>
 
-    <?php include '../src/about_us.php'; ?>
-    
+    <?php include '../includes/about_us.php'; ?>
+
     <?php include '../includes/footer.php'; ?>
 
 </div>

@@ -1,9 +1,15 @@
 <?php
-require_once 'mysqli_connect.php'; 
+    session_start();
+    if(isset($_SESSION['user_level']) || ($_SESSION['user_level'] != 1)) {
+        header(header: "Location: ../public/login.php");
+        exit();
+    }
 
-// Fetch all users
-$q = "SELECT fname, lname, email, DATE_FORMAT(registration_date, '%M %d, %Y') AS regdat, id FROM users ORDER BY id ASC";
-$result = @mysqli_query($dbconnect, $q);
+    require_once 'mysqli_connect.php';
+
+    // Fetch all users
+    $q = "SELECT fname, lname, email, DATE_FORMAT(registration_date, '%M %d, %Y') AS regdat, id FROM users ORDER BY id ASC";
+    $result = @mysqli_query($dbconnect, $q);
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +25,7 @@ $result = @mysqli_query($dbconnect, $q);
 <body>
 <div class="wrapper">
 
-    <?php include '../includes/header.php'; ?>
+    <?php include '../includes/header-admin.php'; ?>
 
     <main class="main-content">
         <center><h2 class="main-heading">Registered Users</h2></center>

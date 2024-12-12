@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/registration.css">
     <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <title>LogIn Page</title>
+    <title>Log In Page</title>
 </head>
 
 <body>
@@ -57,7 +57,7 @@
 ?>
 
     <div style="margin-bottom: 20px;"> <!-- Cancel Login Button -->
-        <a href="../public/index.php" class="cancel-button">Cancel Login</a> 
+        <a href="javascript:window.history.back();" class="cancel-button">Cancel Login</a> 
     </div>
 
     <form class="container" method="post">
