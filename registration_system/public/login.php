@@ -57,7 +57,7 @@
 ?>
 
     <div style="margin-bottom: 20px;"> <!-- Cancel Login Button -->
-        <a href="../public/index.php" class="cancel-button">Cancel Login</a> 
+        <a href="javascript:window.history.back();" class="cancel-button">Cancel Login</a> 
     </div>
 
     <form class="container" method="post">

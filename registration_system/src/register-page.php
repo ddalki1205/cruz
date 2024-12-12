@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
     <div style="margin-bottom: 20px;"> <!-- Cancel Registration Button -->
-        <a href="../public/index.php" class="cancel-button">Cancel Registration</a> 
+        <a href="javascript:window.history.back();" class="cancel-button">Cancel Registration</a> 
     </div>
 
     <div class="container">

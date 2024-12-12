@@ -19,7 +19,7 @@ $result = @mysqli_query($dbconnect, $q);
 <body>
 <div class="wrapper">
 
-    <?php include '../includes/header.php'; ?>
+    <?php include '../includes/header-admin.php'; ?>
 
     <main class="main-content">
         <center><h2 class="main-heading">Registered Users</h2></center>

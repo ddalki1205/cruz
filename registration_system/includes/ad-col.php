@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advertisement</title>
-    <link rel="stylesheet" href="../public/css/info-col.css">  
+    <link rel="stylesheet" href="../public/css/ad-col.css">  
 
 </head>
 

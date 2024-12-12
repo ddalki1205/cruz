@@ -82,7 +82,7 @@ body, h1, h2, p, table, th, td {
 }
 
 .mainpage-image {
-    width: 630px;
+    width: auto;
     height: 442.666666667px;
 }
 
@@ -102,7 +102,7 @@ body, h1, h2, p, table, th, td {
     flex: 1;
     padding: 20px;
     background-color: #ffffff;
-    margin: 20px;
+    margin: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
