@@ -1,10 +1,13 @@
 <?php
     session_start();
-    if(isset($_SESSION['user_level']) || ($_SESSION['user_level'] != 1)) {
-        header(header: "Location: login.php");
+
+    // Redirect to login if the user is not logged in or is an admin
+    if (!isset($_SESSION['user_level']) || $_SESSION['user_level'] == 1) {
+        header("Location: login.php");
         exit();
     }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,10 +28,12 @@
 
 
     <div class="content-container"  >
-        <main class="mem-content"><center>
+        <main class="mem-content">
+            <center>
             <h2 class="main-heading">Homepage for Members</h2>
             <p class="main-paragraph">Our content</p>
-            <img src="" alt="image here" class="mainpage-image"></center>
+            <img src="" alt="image here" class="mainpage-image">
+            </center>
         </main>
 
     </div>
