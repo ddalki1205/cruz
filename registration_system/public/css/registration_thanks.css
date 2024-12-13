@@ -1,12 +1,4 @@
 /* FOR THANK YOU PAGE */
-
-body {
-  font-family: 'Quicksand', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #feeff6;
-}
-
 .header {
   background-color: #b22d64;
   color: white;
@@ -60,12 +52,4 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #b22d64;
-  color: white;
-  width: 100%;
 }
