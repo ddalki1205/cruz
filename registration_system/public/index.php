@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/ad-col.css"> <!-- Add this line to include advertisement CSS -->
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
     
     <title>Website ni Cruz</title>
 
@@ -14,7 +13,7 @@
 <body class="body">
 <div class="wrapper">
 
-    <?php include '../includes/header.php'; ?>
+    <?php include '../includes/navbar.php'; ?>
 
     <div class="content-container">
         <main class="main-content">

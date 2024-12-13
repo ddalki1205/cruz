@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
 
     <title>Search Page - Website ni Cruz</title>
 

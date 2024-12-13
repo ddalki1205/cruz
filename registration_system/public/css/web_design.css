@@ -12,16 +12,18 @@ body, h1, h2, p, table, th, td {
   /* Body styles */
 .body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #feeff6;
+    background-color: rgb(53, 52, 52);
     color: #2a2a2a;
 }
 
   /* Header styles */
 .header {
-    background-color: #b22d64;
+    background-color: #282424;
     color: white;
     padding: 10px;
     text-align: center;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+    opacity: 0.90;
 }
 
 .header-title {
@@ -31,54 +33,6 @@ body, h1, h2, p, table, th, td {
     padding: 10px;
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-  /* Navigation styles */
-.nav {
-    text-align: center;
-}
-
-.nav-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-item {
-    margin: 0 10px;
-}
-
-.nav-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background-color: #ce638f;
-    color: #ffffff;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-  /* Hover effect */
-.nav-link:hover {
-    background-color: #e07da3;
-    transform: scale(1.05);
-}
-
-.nav-link1 {
-    color: #ce638f;
-}
-
-.nav-link1:hover {
-    text-decoration: underline;
-}
-
-.nav-item2 {
-    display: inline;
-    margin-right: 20px;
-    flex-direction: row;
 }
 
 .mainpage-image {
@@ -128,12 +82,19 @@ body, h1, h2, p, table, th, td {
 
   /* Footer styles */
 .footer {
-    margin-top: auto;
+    background-color: #070606;
+    color: #f3f3f3;
+    padding: 20px;
     text-align: center;
-    padding: 15px;
-    background-color: #b22d64;
-    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    border-top: 5px solid #161515;
+    position: relative;
     width: 100%;
+    z-index: 9;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-text {

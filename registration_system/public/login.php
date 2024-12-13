@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../public/css/registration.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/web_design.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <script src="../public/js/cancel-login-register.js"></script>
+    <script src="../public/js/cancel-login.js"></script>
     <title>Log In Page</title>
 </head>
 
@@ -58,19 +57,19 @@
 ?>
 
     <div style="margin-bottom: 20px;">
-        <a href="javascript:void(0);" class="cancel-button" onclick="goBack()">Cancel Login</a>
+        <a href="javascript:void(0);" class="cancel-button" onclick="cancelLogin()">Cancel Login</a>
     </div>
 
     <form class="container" method="post">
         <h1 class="form-title">Login</h1>
 
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" class="input-field" value="<?php if (isset($e)) echo htmlspecialchars($e); ?>">
+        <input type="email" name="email" id="email" class="input-field" autocomplete="off" value="<?php if (isset($e)) echo htmlspecialchars($e); ?>">
         <?php if (!empty($emailError)) echo '<p class="error">' . $emailError . '</p>'; ?>
         <br>
 
         <label for="password">Password:</label>
-        <input type="password" name="password" class="input-field" id="password" value="<?php if (isset($p)) echo htmlspecialchars($p); ?>">
+        <input type="password" name="password" class="input-field" id="password" autocomplete="off" value="<?php if (isset($p)) echo htmlspecialchars($p); ?>">
         <?php if (!empty($passwordError)) echo '<p class="error">' . $passwordError . '</p>'; ?>
         <br>
 

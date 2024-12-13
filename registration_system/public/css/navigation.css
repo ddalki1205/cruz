@@ -1,0 +1,80 @@
+/* Navigation styles */
+.nav {
+    width: 100%;
+    background-color: #282424;
+    padding: 15px;
+    position: fixed;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Vertically align the content */
+    justify-content: space-around;
+    opacity: 0.90;
+}
+
+.nav-buttons-container {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;               /* Space between items */
+    margin: 0;
+}
+
+.navbar-logo {
+    width: 250px;   /* Adjust logo size */
+    height: auto;
+}
+
+
+.nav-logo-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #171615;
+    text-decoration: none;
+    color: white;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 18px;
+    padding: 15px 35px 17px;
+    border-radius: 5px;
+    border: 0;
+
+    transition: background-color 0.3s ease;
+}
+
+  /* Hover effect */
+.nav-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.navregister-button {
+    display: inline-block;
+    background-color: #3c8527;
+    text-decoration: none;
+    color: white;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 20px;
+    padding: 9px 24px 11px;
+    border-top: 5px solid #52a535;
+    border-bottom: 5px solid #2a641c;
+
+    transition: background-color 0.3s ease, font-size 0.15s ease;
+}
+
+/* Hover effect for links */
+.navregister-button:hover {
+    background-color: #367723;
+    border-top: 5px solid #52a535;
+    border-bottom: 5px solid #2a641c;
+    font-size: 21;
+    transform: scale(1.05);
+}
