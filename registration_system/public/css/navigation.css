@@ -1,11 +1,12 @@
 /* Navigation styles */
 nav {
+    left: 0;
     width: 100%;
     background-color: #282424;
     padding: 3px;
     position: fixed;
     box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
-    z-index: 100;
+    z-index: 1000;
     display: flex; /* Use Flexbox */
     align-items: center; /* Vertically align the content */
     justify-content: space-around;

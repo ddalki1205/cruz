@@ -13,11 +13,11 @@ $pageTitle = "Website ni Cruz"
 </head>
 
 <body class="body">
+    
 <?php include '../templates/includes/header.php'; ?>
+<img src="images/wallpaper_minecraft_update_aquatic_2560x1440.png" alt="Welcome page image" class="welcome-header-image">
 
-<header class="welcome-header">
-    <img src="images/wallpaper_minecraft_update_aquatic_2560x1440.png" alt="Welcome page image" class="welcome-header-image">
-</header>
+
 
 <main class="content-container">
     <section class="main-content">

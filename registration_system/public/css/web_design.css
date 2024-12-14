@@ -10,8 +10,9 @@ body,h1, h2, h3, p, table, th, td {
 
   /* Body styles */
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(53, 52, 52);
     color: #2a2a2a;
+    overflow: visible;
 }
 
   /* Header styles */
@@ -22,21 +23,9 @@ header {
     text-align: center;
     box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
     opacity: 0.90;
-}
+    position: relative; 
+    overflow: visible;
 
-/* Welcome header container */
-.welcome-header {
-    width: 100%; /* Full width of the page */
-    height: 80vh; /* Adjust height to fit the desired screen area */
-    overflow: hidden; /* Ensure excess parts of the image are hidden */
-    position: relative; /* For additional positioning if needed later */
-}
-
-/* Welcome header image */
-.welcome-header-image {
-    width: 100%; /* Stretch image to fill width */
-    height: 100%; /* Stretch image to fill height */
-    object-fit: cover; /* Ensure the image scales proportionally while covering the area */
 }
 
 .mainpage-image {
