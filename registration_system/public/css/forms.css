@@ -1,0 +1,144 @@
+/* FOR THANK YOU PAGE */
+.header {
+    background-color: #b22d64;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .thank-you-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+  
+  .paragraph {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #512940;
+  }
+  
+  .homepage-link {
+    display: inline-block;
+    background-color: #b22d64;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .homepage-link:hover {
+    background-color: rgb(221, 120, 157);
+    transform: scale(1.04);
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+/* FOR REGISTRATION */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    color: #b42d65;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 94%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: #b22d64;
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #b42d65;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 115px 10px 115px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: white;
+    color: #b42d65;
+    font-weight: bold;
+    transform: scale(1.00);
+  }
+  
+  .cancel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #801543;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+.cancel-button:hover {
+    background-color: white;
+    color: #691237;
+    font-weight: bold;
+    transform: scale(1.00);
+}
+  
+.register-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      max-width: 400px;
+      margin: 20px auto;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+}
+
+.error {
+      color: red;
+      margin-bottom: 15px;
+}

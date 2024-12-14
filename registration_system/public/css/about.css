@@ -1,0 +1,100 @@
+.about-us-banner {
+    font-family: Mojang;
+    padding: 40px;
+    background-color: #181414; /* Dark background similar to Minecraft's section */
+    color: #f3f3f3; /* Light text for contrast */
+    width: 500px;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 9;
+    height: auto;
+    opacity: 0.90;
+    border-top: 5px solid #575250;
+    border-bottom: 5px solid #070606;
+    text-align: left;
+}
+
+.block {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #181414;
+    border-top: 5px solid #575250;
+    z-index: 10;
+}
+
+.block-1 {
+    top: -104px;
+    left: 530px;
+}
+
+.block-2 {
+    top: -50px;
+    left: 480px;
+}
+
+.block-3 {
+    top: -50px;
+    left: 380px;
+}
+
+.about-us-banner h2 {
+    font-family: 'Mojang';
+    font-size: 38px;
+    margin: 0 0 10px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.about-us-banner p {
+    font-family: 'Segoe UIVF', sans-serif; /* Using Segoe UI for paragraph text */
+    font-size: 19px;
+    max-width: 800px;
+    margin: 20px 0 0 0;
+    line-height: 1.5;
+    color: #e0e0e0; 
+    text-align: justify;
+}
+
+.about-us-banner strong {
+    font-family: 'Mojang', sans-serif; /* Using Segoe UI for paragraph text */
+    font-size: 20px;
+    font-weight: 100;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #ffffff; 
+    text-align: justify;
+}
+
+.about-us-banner button {
+    display: inline-block;
+    background-color: #3c8527;
+    text-decoration: none;
+    color: white;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 22px;
+    width: auto;
+    padding: 10px 20px 37px 20px;
+    height: 50px;
+    margin-left: 20px;
+    border: 0;
+    border-top: 5px solid #52a535;
+    border-bottom: 5px solid #2a641c;
+    margin: 15px 0 0 0;
+
+
+    transition: background-color 0.15s ease,
+                font-size 0.15s ease;
+}
+
+/* Hover effect for links */
+.about-us-banner button:hover {
+    background-color: #367723;
+    border-top: 5px solid #52a535;
+    border-bottom: 5px solid #2a641c;
+    font-size: 23px;
+
+}

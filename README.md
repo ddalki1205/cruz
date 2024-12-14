@@ -18,7 +18,11 @@
   - Fix info column
   - Fix the whole design and concept of the website, it's ugly asf
 
+## Address
 
+    ```arduino
+    localhost/cruz/registration_system/public/
+    ```
 
 ```
 registration_system

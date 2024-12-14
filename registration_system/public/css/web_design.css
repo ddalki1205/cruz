@@ -1,40 +1,42 @@
 /* FOR HOMEPAGE and About */
-body, h1, h2, h3, p {
+* {
     margin: 0;
     padding: 0;
 }
 
-body,h1, h2, h3, p, table, th, td {
-    font-family: 'Segoe UI', sans-serif;
-}
-
   /* Body styles */
-body {
+body, html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgb(53, 52, 52);
     color: #2a2a2a;
-    overflow: visible;
+    max-width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
   /* Header styles */
 header {
-    background-color: #282424;
-    color: white;
-    padding: 0px 10px 10px 10px;
+    z-index: 1000;
     text-align: center;
-    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
     opacity: 0.90;
     position: relative; 
-    overflow: visible;
-
 }
 
-.mainpage-image {
-    width: auto;
-    height: 442.666666667px;
+main {
+    position: relative;
+    min-height: 100vh;
 }
 
   /* Main content styles */
-
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
 .mem-content {
     flex: 1;
     padding: 20px;
@@ -76,21 +78,18 @@ header {
 footer {
     background-color: #070606;
     color: #f3f3f3;
-    padding: 20px;
-    text-align: center;
     font-family: 'Segoe UI', sans-serif;
+    font-size: 17px;
     border-top: 5px solid #161515;
+    text-align: center;
     position: relative;
-    width: 100%;
-    z-index: 9;
-    top: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding: 35px 30px 30px 30px;
 }
 
 footer a {
     color: #ffffff;
+    font-family: Mojang;
+    font-size: 15px;
     text-decoration: none;
     display: inline-flex;
     margin: 0 10px;
