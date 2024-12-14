@@ -1,97 +1,46 @@
 /* FOR HOMEPAGE and About */
-
-body, h1, h2, p {
+* {
     margin: 0;
     padding: 0;
 }
-  
-body, h1, h2, p, table, th, td {
-    font-family: 'Quicksand', sans-serif;
-}
-  
+
   /* Body styles */
-.body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #feeff6; 
-    color: #2a2a2a; 
+body, html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(53, 52, 52);
+    color: #2a2a2a;
+    max-width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
   /* Header styles */
-.header {
-    background-color: #b22d64; 
-    color: white;
-    padding: 10px;
+header {
+    z-index: 1000;
     text-align: center;
+    opacity: 0.90;
+    position: relative; 
 }
-  
-.header-title {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700; 
-    font-size: 2.5rem; 
-    padding: 10px; 
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
-}
-  
-  /* Navigation styles */
-.nav {
-    text-align: center; 
-}
-  
-.nav-list {
-    list-style-type: none; 
-    padding: 0; 
-    display: flex; 
-    justify-content: center; 
-}
-  
-.nav-item {
-    margin: 0 10px; 
-}
-  
-.nav-link {
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 10px 20px; 
-    border-radius: 20px; 
-    background-color: #ce638f; 
-    color: #ffffff; 
-    text-decoration: none; 
-    transition: background-color 0.3s, transform 0.2s; 
-}
-  
-  /* Hover effect */
-.nav-link:hover {
-    background-color: #e07da3; 
-    transform: scale(1.05); 
-}
-  
-.nav-link1 {
-    color: #ce638f;
-}
-  
-.nav-link1:hover {
-    text-decoration: underline;
-}
-  
-.nav-item2 {
-    display: inline;
-    margin-right: 20px;
-    flex-direction: row;
-}
-  
-.mainpage-image { 
-    width: 630px;  
-    height: 442.666666667px;
-} 
-  
-  /* Main content styles */
 
+main {
+    position: relative;
+    min-height: 100vh;
+}
+
+  /* Main content styles */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
 .mem-content {
     flex: 1;
     padding: 20px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -101,80 +50,90 @@ body, h1, h2, p, table, th, td {
 .main-content {
     flex: 1;
     padding: 20px;
-    background-color: #ffffff; 
-    margin: 20px;
+    background-color: #ffffff;
+    margin: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
-  
+
 .main-heading {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
     padding: 7px;
     margin-bottom: 20px;
-    color: #2a2a2a; 
+    color: #2a2a2a;
 }
-  
+
 .main-paragraph {
-    margin-bottom: 15px; 
-    color: #4d4d4d; 
+    margin-bottom: 15px;
+    color: #4d4d4d;
 }
-  
+
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
-  
+
   /* Footer styles */
-.footer {
-    margin-top: auto;
+footer {
+    background-color: #070606;
+    color: #f3f3f3;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 17px;
+    border-top: 5px solid #161515;
     text-align: center;
-    padding: 15px;
-    background-color: #b22d64; 
-    color: white;
-    width: 100%;
+    position: relative;
+    padding: 35px 30px 30px 30px;
 }
-  
-.footer-text {
-    margin: 0;
+
+footer a {
+    color: #ffffff;
+    font-family: Mojang;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-flex;
+    margin: 0 10px;
 }
-  
+
+footer a:hover {
+    text-decoration: underline;
+}
+
   /*for table*/
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
 }
-  
+
 th, td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: left;
 }
-  
+
 th {
-    background-color: #b22d64; 
-    color: white; 
+    background-color: #b22d64;
+    color: white;
 }
-  
+
 tr:hover {
     background-color: #fffafa;
 }
 
 .actions-column {
-    width: 230px; /* Adjust this value to your preference */
+    width: 230px;
     text-align: center;
 }
 
-/* Style the anchor tags to look like buttons */
+/* Style anchor tags to look like buttons */
 .button_EDIT {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #d97c9b; 
-    color: white; 
+    background-color: #d97c9b;
+    color: white;
     text-align: center;
-    text-decoration: none; 
+    text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
@@ -183,27 +142,27 @@ tr:hover {
 }
 
 .button_EDIT:hover {
-    background-color: #e07da3; 
+    background-color: #e07da3;
 }
 
 .button_EDIT:active {
-    background-color: #be4171; 
+    background-color: #be4171;
 }
 
 .button_DELETE {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #b22d64; 
-    color: white; 
+    background-color: #b22d64;
+    color: white;
     text-align: center;
     text-decoration: none; /* Remove underline */
-    border-radius: 5px; 
+    border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 .button_DELETE:hover {
-    background-color: #c14f7e; 
+    background-color: #c14f7e;
 }
 
 .button_DELETE:active {
@@ -212,11 +171,11 @@ tr:hover {
 
 .button-delete-yes {
     padding: 10px 20px;
-    background-color: #b22d64; 
-    color: white; 
+    background-color: #b22d64;
+    color: white;
     text-align: center;
     text-decoration: none; /* Remove underline */
-    border-radius: 5px; 
+    border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
@@ -231,11 +190,11 @@ tr:hover {
 
 .button-delete-yes {
     padding: 10px 20px;
-    background-color: #b22d64; 
-    color: white; 
+    background-color: #b22d64;
+    color: white;
     text-align: center;
     text-decoration: none; /* Remove underline */
-    border-radius: 5px; 
+    border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
@@ -250,7 +209,7 @@ tr:hover {
 
 .register-button {
     font-family: 'Quicksand', sans-serif;
-    background-color: #b42d65; 
+    background-color: #b42d65;
     color: white;
     border: none;
     padding: 10px;
@@ -278,10 +237,10 @@ tr:hover {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .register-button:hover {

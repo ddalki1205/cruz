@@ -18,25 +18,49 @@
   - Fix info column
   - Fix the whole design and concept of the website, it's ugly asf
 
+## Address
 
+    ```arduino
+    localhost/cruz/registration_system/public/
+    ```
 
 ```
-registration_system/
-├── includes/
-├── public/
-│   ├── css/
-│   │   ├── info-col.css
-│   │   ├── registration_thanks.css
+registration_system
+├── includes
+│   ├── about_members.php
+│   ├── about_us.php
+│   ├── ad-col.php
+│   ├── footer.php
+│   ├── header-admin.php
+│   ├── header-mem.php
+│   ├── header.php
+│   ├── nav-foradmin.php
+│   ├── nav-formem.php
+│   └── nav.php
+├── public
+│   ├── admin-page.php
+│   ├── css
+│   │   ├── ad-col.css
 │   │   ├── registration.css
+│   │   ├── registration_thanks.css
 │   │   └── web_design.css
-│   ├── images/
-│   └── index.php
-└── src/
-    ├── about_us.php
+│   ├── images
+│   │   ├── art.png
+│   │   ├── dashboard.jpg
+│   │   ├── twice.jpeg
+│   │   └── Twice.png
+│   ├── index.php
+│   ├── login.php
+│   ├── members-page.php
+│   └── old-login-draft.php
+└── src
+    ├── change-password.php
     ├── delete_user.php
     ├── edit_user.php
     ├── mysqli_connect.php
     ├── register-page.php
     ├── register-thanks.php
-    └── register-view-users.php
+    ├── register-view-users.php
+    └── search.php
+
 ```
