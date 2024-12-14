@@ -2,15 +2,14 @@
 nav {
     left: 0;
     width: 100%;
-    background-color: #282424;
+    background-color: rgba(38,36,35,.9);
     padding: 3px;
     position: fixed;
-    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
     z-index: 1000;
     display: flex; /* Use Flexbox */
     align-items: center; /* Vertically align the content */
     justify-content: space-around;
-    opacity: 0.99;
 }
 
 .nav-buttons-container {

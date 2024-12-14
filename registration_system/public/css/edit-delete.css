@@ -1,0 +1,201 @@
+/* Registered users */
+.actions-column {
+    width: 230px;
+    text-align: center;
+}
+
+.button_EDIT {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d97c9b;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-right: 25px;
+    margin-left: 1px;
+}
+
+.button_EDIT:hover {
+    background-color: #e07da3;
+}
+
+.button_EDIT:active {
+    background-color: #be4171;
+}
+
+.button_DELETE {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b22d64;
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button_DELETE:hover {
+    background-color: #c14f7e;
+}
+
+.button_DELETE:active {
+    background-color: #8c204d;
+}
+
+.button-delete-yes {
+    padding: 10px 20px;
+    background-color: #b22d64;
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-delete-yes:hover {
+    background-color: #c14f7e;
+}
+
+.button-delete-yes:active {
+    background-color: #8c204d;
+}
+
+.button-delete-yes {
+    padding: 10px 20px;
+    background-color: #b22d64;
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-delete-yes:hover {
+    background-color: #c14f7e;
+}
+
+.button-delete-yes:active {
+    background-color: #8c204d;
+}
+
+.wrapper-edit {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content-edit {
+    flex: 1;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/*FOR EDIT PAGE*/
+.register-button:hover {
+    background-color: white;
+    color: #b42d65;
+    font-weight: bold;
+    transform: scale(1.00);
+}
+
+.edit-form p {
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+    color: #b22d64;
+}
+
+.input-text {
+    font-family: 'Quicksand', sans-serif;
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-text:focus {
+    border-color: #b22d64;
+    outline: none;
+}
+
+/* Submit button styling */
+.update-button {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    padding: 13px;
+    background-color: #b22d64;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.update-button:hover {
+    background-color: #a51d5a;
+}
+
+.update-button:active {
+    background-color: #8c204d;
+}
+
+/* Go Back button styling */
+.go-back-button {
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d97c9b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+
+.go-back-button:hover {
+    background-color: #e07da3;
+}
+
+.go-back-button:active {
+    background-color: #be4171;
+}
+
+/* Message styling for user feedback */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message-yehey {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}

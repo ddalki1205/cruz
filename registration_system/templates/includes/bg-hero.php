@@ -6,5 +6,6 @@
             <img src="../public/images/Focus_Cherry.png" alt="Image 4" class="image-4">
             <img src="../public/images/Foreground.png" alt="Image 5" class="image-5">
             <img src="../public/images/buildboard-logo.png" alt="Buildboard Logo" class="image-6">
+            <?php include '../templates/includes/about.php'; ?>
         </div>
 </div>

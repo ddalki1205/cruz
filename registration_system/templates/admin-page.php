@@ -12,7 +12,7 @@ include 'includes/header.php';
 <main>
     <center>
     <h2 class="main-heading">Admin Dashboard</h2>
-    <p class="main-paragraph">Updates for your website!</p>
+    <p>Updates for your website!</p>
     <img src="../public/images/dashboard.jpg" alt="dashboard" class="mainpage-image">
     </center>
 </main>

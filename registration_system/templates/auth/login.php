@@ -34,33 +34,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 header('Location: ' . $url);
                 exit();
             } else {
-                $passwordError = 'Wrong password. Please try again.';
+                $passwordError = 'Wrong email or password. Please try again.';
             }
         } else {
-            $emailError = 'No account found. Please register first.';
+            $emailError = 'Wrong email or password. Please try again.';
         }
         mysqli_close($dbconnect);
     }
 }
 
-include '../includes/header-no-nav.php';
+include '../includes/header.php';
 
 ?>
 <main>
-    <div style="margin-bottom: 20px;"> <!-- Cancel Registration Button -->
-        <a href="javascript:window.history.back();" class="cancel-button">Cancel Login</a> 
-    </div>
 
     <form class="container" method="post">
         <h1 class="form-title">Login</h1>
 
         <label for="email">Email:</label>
         <input type="text" name="email" id="email" class="input-field" autocomplete="off" value="<?php if (isset($e)) echo htmlspecialchars($e); ?>">
-        <?php if (!empty($emailError)) echo '<p class="error">' . $emailError . '</p>'; ?>
         <br>
-
+        
         <label for="password">Password:</label>
         <input type="password" name="password" class="input-field" id="password" autocomplete="off" value="<?php if (isset($p)) echo htmlspecialchars($p); ?>">
+        <?php if (!empty($emailError)) echo '<p class="error">' . $emailError . '</p>'; ?>
         <?php if (!empty($passwordError)) echo '<p class="error">' . $passwordError . '</p>'; ?>
         <br>
 

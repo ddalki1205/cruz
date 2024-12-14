@@ -9,8 +9,7 @@ body, html {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(53, 52, 52);
-    color: #2a2a2a;
+    background-color: #171615;
     max-width: 100%;
     font-family: 'Segoe UI', sans-serif;
     overflow-x: hidden;
@@ -30,42 +29,57 @@ main {
     min-height: 100vh;
 }
 
-  /* Main content styles */
+.sblock {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #171615;
+    z-index: 8;
+}
+
+.sblock-1 {
+    top: 0px;
+    right: 50px;
+    background-color: black;
+}
+
+.sblock-2 {
+    top: -50px;
+    right: 50px;
+}
+
+.sblock-3 {
+    top: -50px;
+    right: 150px;
+}
+
+.sblock-4 {
+    top: -100px;
+    right: 0;
+}
+
+/* Main content styles */
 .content-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    background-color: black;
 }
-  
-.mem-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #ffffff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    align-items: flex-start;
-}
+
 
 .main-content {
     flex: 1;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #171615;
     margin: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .main-heading {
     font-weight: 700;
     padding: 7px;
     margin-bottom: 20px;
-    color: #2a2a2a;
-}
-
-.main-paragraph {
-    margin-bottom: 15px;
-    color: #4d4d4d;
+    color: #171615;
 }
 
 .wrapper {
@@ -73,6 +87,16 @@ main {
     flex-direction: column;
     min-height: 100vh;
 }
+
+.separator-design {
+    width: 100%;          
+    height: 200px;         
+    background: #171615; 
+    position: relative;  
+    margin-bottom: 5px;  
+    z-index: 7;           
+}
+
 
   /* Footer styles */
 footer {
@@ -121,94 +145,8 @@ tr:hover {
     background-color: #fffafa;
 }
 
-.actions-column {
-    width: 230px;
-    text-align: center;
-}
-
-/* Style anchor tags to look like buttons */
-.button_EDIT {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d97c9b;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    margin-right: 25px;
-    margin-left: 1px;
-}
-
-.button_EDIT:hover {
-    background-color: #e07da3;
-}
-
-.button_EDIT:active {
-    background-color: #be4171;
-}
-
-.button_DELETE {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #b22d64;
-    color: white;
-    text-align: center;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.button_DELETE:hover {
-    background-color: #c14f7e;
-}
-
-.button_DELETE:active {
-    background-color: #8c204d;
-}
-
-.button-delete-yes {
-    padding: 10px 20px;
-    background-color: #b22d64;
-    color: white;
-    text-align: center;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.button-delete-yes:hover {
-    background-color: #c14f7e;
-}
-
-.button-delete-yes:active {
-    background-color: #8c204d;
-}
-
-.button-delete-yes {
-    padding: 10px 20px;
-    background-color: #b22d64;
-    color: white;
-    text-align: center;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.button-delete-yes:hover {
-    background-color: #c14f7e;
-}
-
-.button-delete-yes:active {
-    background-color: #8c204d;
-}
-
 .register-button {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #b42d65;
     color: white;
     border: none;
@@ -219,121 +157,4 @@ tr:hover {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s, transform 0.2s;
-}
-
-
-/*FOR EDIT PAGE*/
-
-.wrapper-edit {
-    display: flex;
-    flex-direction: column;
-    height: 85vh;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-content-edit {
-    flex: 1;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
-
-.register-button:hover {
-    background-color: white;
-    color: #b42d65;
-    font-weight: bold;
-    transform: scale(1.00);
-}
-
-.edit-form p {
-    margin-bottom: 15px;
-}
-
-.label {
-    font-weight: bold;
-    color: #b22d64;
-}
-
-.input-text {
-    font-family: 'Quicksand', sans-serif;
-    width: 96%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-.input-text:focus {
-    border-color: #b22d64;
-    outline: none;
-}
-
-/* Submit button styling */
-.update-button {
-    font-family: 'Quicksand', sans-serif;
-    width: 100%;
-    padding: 13px;
-    background-color: #b22d64;
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.update-button:hover {
-    background-color: #a51d5a;
-}
-
-.update-button:active {
-    background-color: #8c204d;
-}
-
-/* Go Back button styling */
-.go-back-button {
-    font-family: 'Quicksand', sans-serif;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #d97c9b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 17px;
-    transition: background-color 0.3s;
-}
-
-.go-back-button:hover {
-    background-color: #e07da3;
-}
-
-.go-back-button:active {
-    background-color: #be4171;
-}
-
-/* Message styling for user feedback */
-.message {
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.message-yehey {
-    background-color: #d4edda;
-    color: #155724;
-}
-
-.message-error {
-    background-color: #f8d7da;
-    color: #721c24;
 }

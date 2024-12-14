@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Check if the email already exists in the database
     if (empty($errors)) {
-        require('mysqli_connect.php'); // Connect to the database
+        require('../../src/mysqli_connect.php'); // Connect to the database
 
         // Check for duplicate email
         $q = "SELECT email FROM users WHERE email = '$e'";
@@ -85,7 +85,7 @@ include '../includes/header.php';
 <main>
     <div class="container">
         <h1 class="form-title">Register</h1>
-        <form action="register-page.php" method="post"> 
+        <form action="register.php" method="post"> 
             <label for="fname">First Name:</label>
             <input type="text" name="fname" id="fname" class="input-field" value="<?php if (isset($fn)) echo htmlspecialchars($fn); ?>"><br>
     
