@@ -21,8 +21,8 @@ include 'includes/header.php';
 <main>
     <center>
     <h2 class="main-heading">Admin Dashboard</h2>
-    <p>Updates for your website!</p>
-    <img src="../public/images/dashboard.jpg" alt="dashboard" class="mainpage-image">
+    <p class="main-paragraph">(Work in Progress)</p>
+    <img class="mem-content-img" src="<?php echo BASE_URL ?>public/images/dashboard.png" class="mainpage-image">
     </center>
 </main>
 

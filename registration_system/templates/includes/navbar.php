@@ -23,6 +23,7 @@
     <div class="nav-buttons-container">
         <li class="nav-item"><a class="nav-button" href="<?php echo BASE_URL ?>templates/admin-page.php">Admin Dashboard</a></li>
         <li class="nav-item"><a class="nav-button" href="<?php echo BASE_URL ?>templates/members-page.php">Content Page</a></li>
+        <li class="nav-item"><a class="nav-button" href="<?php echo BASE_URL ?>templates/auth/register.php">Register</a></li>
         <li class="nav-item"><a class="nav-button" href="<?php echo BASE_URL ?>templates/register-view-users.php">Registered Users</a></li>
         <li class="nav-item"><a class="nav-button" href="<?php echo BASE_URL ?>templates/auth/logout.php">Log Out</a></li>
     </div>

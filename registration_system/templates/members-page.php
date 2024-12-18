@@ -11,16 +11,14 @@ if (!isset($_SESSION['user_level'])) {
 }
 
 $pageTitle = "Members page";
-
-include 'includes/header.php';?>
+include 'includes/header.php';
 ?>
 
 <main>
     <center>
     <h2 class="main-heading">Homepage for Members</h2>
-    <p class="main-paragraph">Our content</p>
-    <img src="" alt="image here" class="mainpage-image">
-    <img src="<?php echo BASE_URL ?>public/images/bridge.jpg" class="mainpage-image">
+    <p class="main-paragraph">Our content (WIP)</p>
+    <img class="mem-content-img" src="<?php echo BASE_URL ?>public/images/wallpaper_minecraft_caves_cliffs(part1)_2560x1440.png" class="mainpage-image">
     </center>
 </main>
 

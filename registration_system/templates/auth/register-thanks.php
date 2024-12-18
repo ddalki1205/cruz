@@ -13,12 +13,14 @@ $pageTitle = "Registration Success!";
 include '../includes/header.php';
 
 ?>
-<main>
-    <h1 class="heading">Thank You for Registering!</h1>
-    <div class="thank-you-container">
-            <p class="paragraph">Your registration was successful. You can now log in to your account.</p>
-            <a href="<?php echo BASE_URL ?>/public/" class="homepage-link">Go to Homepage</a>
-    </div>
+<main class="ty-img">
+    <center>
+    <section class="thank-you-container">
+    <h1 class="ty-heading">Thank You for Registering</h1>
+    <p class="paragraph">You can now log in to your account.</p><br>
+    <a class="navregister-button" href="<?php echo BASE_URL ?>/public/" class="homepage-link">Go to Homepage</a>
+    </section>
+    </center>
 </main>
 
 <?php include '../includes/footer.php'; ?>

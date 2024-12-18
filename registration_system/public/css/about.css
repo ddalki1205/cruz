@@ -69,7 +69,7 @@
     text-align: justify;
 }
 
-.about-us-banner button {
+.about-us-banner a {
     display: inline-block;
     background-color: #3c8527;
     text-decoration: none;
@@ -77,8 +77,8 @@
     font-family: 'Minecraft', sans-serif;
     font-size: 22px;
     width: auto;
-    padding: 10px 20px 37px 20px;
-    height: 50px;
+    padding: 10px 20px 10px 20px;
+    height: 30px;
     margin-left: 20px;
     border: 0;
     border-top: 5px solid #52a535;
@@ -91,10 +91,9 @@
 }
 
 /* Hover effect for links */
-.about-us-banner button:hover {
+.about-us-banner a:hover {
     background-color: #367723;
     border-top: 5px solid #52a535;
     border-bottom: 5px solid #2a641c;
     font-size: 23px;
-
 }

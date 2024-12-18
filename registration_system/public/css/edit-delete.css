@@ -7,7 +7,7 @@
 .button_EDIT {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #d97c9b;
+    background-color: #3c7c28;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -19,17 +19,17 @@
 }
 
 .button_EDIT:hover {
-    background-color: #e07da3;
+    background-color: #4f9834;
 }
 
 .button_EDIT:active {
-    background-color: #be4171;
+    background-color: #2d5f1f;
 }
 
 .button_DELETE {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #b22d64;
+    background-color: #1e1e1e;
     color: white;
     text-align: center;
     text-decoration: none; /* Remove underline */
@@ -39,16 +39,16 @@
 }
 
 .button_DELETE:hover {
-    background-color: #c14f7e;
+    background-color: #1b181c;
 }
 
 .button_DELETE:active {
-    background-color: #8c204d;
+    background-color: #1b181c;
 }
 
 .button-delete-yes {
     padding: 10px 20px;
-    background-color: #b22d64;
+    background-color: #3c7c28;
     color: white;
     text-align: center;
     text-decoration: none; /* Remove underline */
@@ -58,16 +58,16 @@
 }
 
 .button-delete-yes:hover {
-    background-color: #c14f7e;
+    background-color: #4f9834;
 }
 
 .button-delete-yes:active {
-    background-color: #8c204d;
+    background-color: #2d5f1f;
 }
 
 .button-delete-yes {
     padding: 10px 20px;
-    background-color: #b22d64;
+    background-color: #3c7c28;
     color: white;
     text-align: center;
     text-decoration: none; /* Remove underline */
@@ -77,11 +77,11 @@
 }
 
 .button-delete-yes:hover {
-    background-color: #c14f7e;
+    background-color: #4f9834;
 }
 
 .button-delete-yes:active {
-    background-color: #8c204d;
+    background-color: #2d5f1f;
 }
 
 .wrapper-edit {
@@ -107,7 +107,7 @@
 /*FOR EDIT PAGE*/
 .register-button:hover {
     background-color: white;
-    color: #b42d65;
+    color: #3c7c28;
     font-weight: bold;
     transform: scale(1.00);
 }
@@ -118,30 +118,30 @@
 
 .label {
     font-weight: bold;
-    color: #b22d64;
+    color: #3c7c28;
 }
 
 .input-text {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     width: 96%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s;
 }
 
 .input-text:focus {
-    border-color: #b22d64;
+    border-color: #3c7c28;
     outline: none;
 }
 
 /* Submit button styling */
 .update-button {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Minecraft', sans-serif;
     width: 100%;
     padding: 13px;
-    background-color: #b22d64;
+    background-color: #3c7c28;
     color: white;
     font-size: 17px;
     font-weight: bold;
@@ -152,11 +152,11 @@
 }
 
 .update-button:hover {
-    background-color: #a51d5a;
+    background-color: #4f9834;
 }
 
 .update-button:active {
-    background-color: #8c204d;
+    background-color: #2d5f1f;
 }
 
 /* Go Back button styling */
@@ -164,7 +164,7 @@
     font-family: 'Quicksand', sans-serif;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #d97c9b;
+    background-color: #3c7c28;
     color: white;
     border: none;
     border-radius: 5px;
@@ -174,11 +174,11 @@
 }
 
 .go-back-button:hover {
-    background-color: #e07da3;
+    background-color: #4f9834;
 }
 
 .go-back-button:active {
-    background-color: #be4171;
+    background-color: #2d5f1f;
 }
 
 /* Message styling for user feedback */

@@ -20,8 +20,8 @@
 .image-3 { top: 290px;  z-index: 3; }
 .image-4 { top: 330px;  z-index: 4; }
 .image-5 { top: 1200px;  z-index: 5; }
-.image-6 { top: 320px;  z-index: 5; width: 800px;  height: auto;
-            left: 50%; /* Center horizontally */
+.image-6 { top: 370px;  z-index: 5; width: 800px;  height: auto;
+            left: 48%; /* Center horizontally */
             transform: translate(-50%, -50%);}
 
 .buildboard-logo {
