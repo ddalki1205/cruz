@@ -1,9 +1,16 @@
 <?php
 $config = include __DIR__ . '/../config/config.php';
-session_start();
-// Redirect to login if the user is not an admin
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 if (!isset($_SESSION['user_level']) || $_SESSION['user_level'] != 1) {
-    header('Location: ' . BASE_URL .  ' public/login.php');
+    if (isset($_SESSION['user_level'])) {
+        header('Location: ' . BASE_URL .  'public/');
+        exit();
+    }
+    header('Location: ' . BASE_URL .  'templates/auth/login.php');
     exit();
 }
 

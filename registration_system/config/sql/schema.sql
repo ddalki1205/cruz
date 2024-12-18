@@ -2,7 +2,7 @@
 -- 0 for users
 -- 1 for admins
 
-CREATE_TABLE IF NOT EXISTS users (
+CREATE TABLE IF NOT EXISTS users (
     user_level TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,
     id INT(11) NOT NULL AUTO_INCREMENT,
     fname VARCHAR(50) NOT NULL,

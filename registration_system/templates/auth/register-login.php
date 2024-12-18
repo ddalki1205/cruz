@@ -1,8 +1,14 @@
 <?php
+$config = include __DIR__ . '/../../config/config.php';
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 // Handle Login Form Logic
 $emailError = $passwordError = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
-    require('../../src/mysqli_connect.php');
+    require_once __DIR__ . '/../../src/mysqli_connect.php';
 
     $e = trim($_POST['email'] ?? '');
     $p = trim($_POST['password'] ?? '');
@@ -66,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
     }
 
     if (empty($errors)) {
-        require('../../src/mysqli_connect.php');
+        require_once __DIR__ . '/../../src/mysqli_connect.php';
         $q = "SELECT email FROM users WHERE email = '$e'";
         $result = @mysqli_query($dbconnect, $q);
 
@@ -79,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
             $result = @mysqli_query($dbconnect, $q);
 
             if ($result) {
-                header('Location: register-thanks.php');
+                header('Location: ' . BASE_URL . 'templates/auth/register-thanks.php');
                 exit();
             } else {
                 echo '<p class="error">System Error: Could not complete registration.</p>';

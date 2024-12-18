@@ -32,8 +32,8 @@ return [
     ],
     'db' => [
         'host' => 'localhost',
-        'user' => '201cruz',
-        'password' => 'cruz',
+        'user' => 'root',
+        'password' => '',
         'name' => 'members_cruz',
         'charset' => 'utf8'
     ],
