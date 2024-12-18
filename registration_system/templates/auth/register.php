@@ -86,19 +86,19 @@ include '../includes/header.php';
     <div class="container">
         <h1 class="form-title">Register</h1>
         <form action="register.php" method="post"> 
-            <label for="fname">First Name:</label>
+            <label style="color:black" for="fname">First Name:</label>
             <input type="text" name="fname" id="fname" class="input-field" value="<?php if (isset($fn)) echo htmlspecialchars($fn); ?>"><br>
     
-            <label for="lname">Last Name:</label>
+            <label style="color:black" for="lname">Last Name:</label>
             <input type="text" name="lname" id="lname" class="input-field" value="<?php if (isset($ln)) echo htmlspecialchars($ln); ?>"><br>
     
-            <label for="email">Email:</label>
+            <label style="color:black" for="email">Email:</label>
             <input type="email" name="email" id="email" class="input-field" value="<?php if (isset($e)) echo htmlspecialchars($e); ?>"><br>
     
-            <label for="psword1">Password:</label>
+            <label style="color:black" for="psword1">Password:</label>
             <input type="password" name="psword1" class="input-field" id="psword1"><br>
     
-            <label for="psword2">Confirm Password:</label>
+            <label style="color:black" for="psword2">Confirm Password:</label>
             <input type="password" name="psword2" class="input-field" id="psword2"><br>
     
             <!-- Display validation errors if any exist after the form is submitted -->

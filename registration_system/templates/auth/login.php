@@ -1,4 +1,11 @@
-<?php 
+<?php
+$config = include __DIR__ . '/../../config/config.php';
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+
 $emailError = $passwordError = '';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -51,11 +58,11 @@ include '../includes/header.php';
     <form class="container" method="post">
         <h1 class="form-title">Login</h1>
 
-        <label for="email">Email:</label>
+        <label style="color:black" for="email">Email:</label>
         <input type="text" name="email" id="email" class="input-field" autocomplete="off" value="<?php if (isset($e)) echo htmlspecialchars($e); ?>">
         <br>
         
-        <label for="password">Password:</label>
+        <label style="color:black" for="password">Password:</label>
         <input type="password" name="password" class="input-field" id="password" autocomplete="off" value="<?php if (isset($p)) echo htmlspecialchars($p); ?>">
         <?php if (!empty($emailError)) echo '<p class="error">' . $emailError . '</p>'; ?>
         <?php if (!empty($passwordError)) echo '<p class="error">' . $passwordError . '</p>'; ?>
