@@ -19,7 +19,8 @@ include 'includes/header-no-nav.php';
 ?>
 <main>
 <center>
-<h2> Deleting Record... </h2><br>
+<div class="container">
+<h2 class="form-title"> Deleting Record... </h2>
         <?php
         if ((isset($_GET['id'])) && (is_numeric($_GET['id']))) {
             $id = $_GET['id'];
@@ -41,8 +42,8 @@ include 'includes/header-no-nav.php';
 
                 if (mysqli_affected_rows($dbconnect) == 1) {
                     // Deleted successfully
-                    echo '<p>Deleted Successfully</p>';
-                    echo '<a href="register-view-users.php">View Users</a>';
+                    echo '<p class="main-paragraph">Deleted Successfully</p>';
+                    echo '<a class="navregister-button href="register-view-users.php">View Users</a>';
                 } else {
                     // Not deleted successfully
                     echo '<p>ERROR. Kindly Contact Administrator.</p>';
@@ -51,8 +52,8 @@ include 'includes/header-no-nav.php';
                 $q = "SELECT CONCAT(fname, ' ', lname) FROM users WHERE id = '$id'";  // Use 'id' here
                 $result = @mysqli_query($dbconnect, $q);
                 $row = mysqli_fetch_array($result, MYSQLI_NUM);
-                echo "<p>$row[0] was not deleted.</p>";
-                echo '<a href="register-view-users.php">View Users</a>';
+                echo "<p class='main-paragraph'>$row[0] was not deleted.</p><br>";
+                echo '<a class="navregister-button" href="register-view-users.php">View Users</a>';
             }
         } else {
             // Display form to confirm deletion
@@ -60,11 +61,11 @@ include 'includes/header-no-nav.php';
             $result = @mysqli_query($dbconnect, $q);
             if (mysqli_num_rows($result) == 1) {
                 $row = mysqli_fetch_array($result, MYSQLI_NUM);
-                echo "<h3>Are you sure you want to delete $row[0]?</h3>";
+                echo "<h3>Are you sure you want to delete $row[0]?</h3><br>";
                 echo '
                 <form action="delete_user.php" method="post">
-                    <input class="button-delete-id="submit-yes" type="submit" name="sure" value="Yes">
-                    <input id="submit-no" type="submit" name="sure" value="No">
+                    <input class="button-delete-yes" id="submit-yes" type="submit" name="sure" value="Yes">
+                    <input class="button-delete-no" id="submit-no" type="submit" name="sure" value="No">
                     <input type="hidden" name="id" value="' . $id . '">
                 </form>
                 ';
@@ -80,5 +81,6 @@ include 'includes/header-no-nav.php';
         mysqli_close($dbconnect);
         ?>
 </center>
+</div>
 </main>
 <?php include '../includes/footer.php'; ?>
