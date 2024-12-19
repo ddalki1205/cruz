@@ -17,8 +17,9 @@ $pageTitle = "Users";
 include 'includes/header.php';
 ?>
 
-<main class="main-content-edit">
-    <h2> Edit User Record  </h2></center>
+<main>
+<form class="container" action="edit_user.php" method="post">
+    <h2 class="form-title"> Edit User Record  </h2></center>
     <?php
         if ((isset($_GET['id'])) && (is_numeric($_GET['id']))) {
             $id = $_GET['id']; 
@@ -72,33 +73,30 @@ include 'includes/header.php';
         if (mysqli_num_rows($result) == 1) {
             $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
             echo '
-            <main>
-            <form class="container" action="edit_user.php" method="post">
-                <p> <label class="label" for="fname"><br>First Name</label>
-                    <input type="text" class="input-text" name="fname" size="30" maxlength="40"
+                <p> <label class="form-label" for="fname"><br>First Name</label>
+                    <input type="text" class="input-field" name="fname" size="30" maxlength="40"
                     value="'.$row["fname"].'"></p>
 
-                <p> <label class="label" for="lname"<br><br>Last Name</label>
-                    <input type="text" class="input-text" name="lname" size="30" maxlength="40"
+                <p> <label class="form-label" for="lname"<br><br>Last Name</label>
+                    <input type="text" class="input-field" name="lname" size="30" maxlength="40"
                     value="'.$row["lname"].'"></p>
 
-                <p> <label class="label" for="email"><br>Email Address</label>
-                    <input type="text" class="input-text" name="email" size="30" maxlength="50"
+                <p> <label class="form-label" for="email"><br>Email Address</label>
+                    <input type="text" class="input-field" name="email" size="30" maxlength="50"
                     value="'.$row["email"].'"></p><br>
 
-                <p> <input type="submit" class="update-button" name="update" value="Update"></p>
+                <p> <input type="submit" class="submit-button" name="update" value="Update"></p>
                 <p> <a href="register-view-users.php">
-                    <button type="button" class="go-back-button">Go Back</button></a></p>
+                    <button type="button" class="submit-button">Go Back</button></a></p>
                 <p> <input type="hidden" name="id" value="'.$id.'"></p>
-            </form>
-            <main>
+            
             ';
         } else {
             echo '<p class="error">This page has been accessed by mistake</p>';
             exit();
         }
     ?>
-
+</form>
 </main>
 
 <?php include 'includes/footer.php'; ?>

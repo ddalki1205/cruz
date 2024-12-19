@@ -47,42 +47,57 @@
 }
 
 .button-delete-yes {
-    padding: 10px 20px;
-    background-color: #3c7c28;
+    display: inline-block;
+    font-family: 'Mojang', sans-serif;
+    background-color: #772323;
+    text-decoration: none;
     color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 150px;
+    cursor: pointer;
     text-align: center;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    margin: 10px 115px 10px 115px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .button-delete-yes:hover {
-    background-color: #4f9834;
-}
+    background-color: white;
+    color: #641c1c;
+}    
 
 .button-delete-yes:active {
-    background-color: #2d5f1f;
+    background-color: #5f1f1f;
 }
 
-.button-delete-yes {
-    padding: 10px 20px;
-    background-color: #3c7c28;
+.button-delete-no {
+    display: inline-block;
+    font-family: 'Mojang', sans-serif;
+    background-color: #367723;
+    text-decoration: none;
     color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 150px;
+    cursor: pointer;
     text-align: center;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    margin: 10px 115px 10px 115px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.button-delete-yes:hover {
-    background-color: #4f9834;
-}
+.button-delete-no:hover {
+    background-color: white;
+    color: #2a641c;
+}    
 
-.button-delete-yes:active {
+.button-delete-no:active {
     background-color: #2d5f1f;
 }
+
 
 .wrapper-edit {
     display: flex;
@@ -161,7 +176,7 @@
 
 /* Go Back button styling */
 .go-back-button {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Mojang', sans-serif;
     display: inline-block;
     padding: 10px 20px;
     background-color: #3c7c28;
@@ -188,14 +203,15 @@
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
+    font-family: "Segoe UI";
 }
 
 .message-yehey {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: #155724;
+    color: white;
 }
 
 .message-error {
-    background-color: #f8d7da;
-    color: #721c24;
+    background-color: #721c24;
+    color: white;
 }
