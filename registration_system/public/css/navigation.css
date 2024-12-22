@@ -65,6 +65,8 @@ nav {
     padding: 9px 24px 11px;
     border-top: 5px solid #52a535;
     border-bottom: 5px solid #2a641c;
+    border-left: 0;
+    border-right: 0;
 
     transition: background-color 0.3s ease, font-size 0.15s ease;
 }

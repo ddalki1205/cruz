@@ -179,20 +179,6 @@ tr:hover {
     background-color: #1e1e1e;
 }
 
-.register-button {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #3c7c28;
-    color: white;
-    border: none;
-    padding: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
 .login-img {
     background: url('../../public/images/water.png') no-repeat center center fixed; 
     background-size: cover; 
@@ -215,6 +201,26 @@ tr:hover {
 
 .ty-img {
     background: url('../../public/images/steve-alex-bee.png') no-repeat center center fixed; 
+    background-size: cover; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 20px;
+}
+
+.delete-img {
+    background: url('../../public/images/wallpaper_minecraft_caves_cliffs(part2)_2560x1440.png') no-repeat center center fixed; 
+    background-size: cover; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 20px;
+}
+
+.edit-img {
+    background: url('../../public/images/wallpaper_minecraft_15th-anniversary_2560x1440.png') no-repeat center center fixed; 
     background-size: cover; 
     display: flex; 
     justify-content: center; 

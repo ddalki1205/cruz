@@ -17,7 +17,7 @@ $pageTitle = "Users";
 include 'includes/header.php';
 ?>
 
-<main>
+<main class="edit-img">
 <form class="container" action="edit_user.php" method="post">
     <h2 class="form-title"> Edit User Record  </h2></center>
     <?php
@@ -73,15 +73,15 @@ include 'includes/header.php';
         if (mysqli_num_rows($result) == 1) {
             $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
             echo '
-                <p> <label class="form-label" for="fname"><br>First Name</label>
+                <p> <label class="form-label" for="fname"><br>First    Name:</label>
                     <input type="text" class="input-field" name="fname" size="30" maxlength="40"
                     value="'.$row["fname"].'"></p>
 
-                <p> <label class="form-label" for="lname"<br><br>Last Name</label>
+                <p> <label class="form-label" for="lname"<br><br>Last    Name:</label>
                     <input type="text" class="input-field" name="lname" size="30" maxlength="40"
                     value="'.$row["lname"].'"></p>
 
-                <p> <label class="form-label" for="email"><br>Email Address</label>
+                <p> <label class="form-label" for="email"><br>Email    Address:</label>
                     <input type="text" class="input-field" name="email" size="30" maxlength="50"
                     value="'.$row["email"].'"></p><br>
 

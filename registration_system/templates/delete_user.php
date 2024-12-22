@@ -17,7 +17,7 @@ if (!isset($_SESSION['user_level']) || $_SESSION['user_level'] != 1) {
 $pageTitle = 'Confirm?';
 include 'includes/header-no-nav.php';
 ?>
-<main>
+<main class="delete-img">
 <center>
 <div class="container">
 <h2 class="form-title"> Deleting Record... </h2>
@@ -43,7 +43,7 @@ include 'includes/header-no-nav.php';
                 if (mysqli_affected_rows($dbconnect) == 1) {
                     // Deleted successfully
                     echo '<p class="main-paragraph">Deleted Successfully</p>';
-                    echo '<a class="navregister-button href="register-view-users.php">View Users</a>';
+                    echo '<a  href="register-view-users.php" class="navregister-button">View Users</a>';
                 } else {
                     // Not deleted successfully
                     echo '<p>ERROR. Kindly Contact Administrator.</p>';
@@ -53,7 +53,7 @@ include 'includes/header-no-nav.php';
                 $result = @mysqli_query($dbconnect, $q);
                 $row = mysqli_fetch_array($result, MYSQLI_NUM);
                 echo "<p class='main-paragraph'>$row[0] was not deleted.</p><br>";
-                echo '<a class="navregister-button" href="register-view-users.php">View Users</a>';
+                echo '<a href="register-view-users.php" class="navregister-button">View Users</a>';
             }
         } else {
             // Display form to confirm deletion
@@ -70,10 +70,9 @@ include 'includes/header-no-nav.php';
                 </form>
                 ';
             } else {
-                echo '<h1>User not found pareh.</h1>';
-                echo '<img src="https://i.pinimg.com/474x/27/6b/63/276b632832568d2a2d2dcca54ccb1e77.jpg" alt="BOOLAGAH" style="width:1400px;height:900px;"><br>';
-                echo '  <form action="../src/register-page.php" method="get">
-                        <br><button class="register-button" type="submit">Register A New User</button>
+                echo '<h1>User not found</h1>';
+                echo '  <form action="auth/register.php" method="get">
+                        <br><button class="navregister-button" type="submit">Register A New User</button>
                         </form>';
             }
         }
@@ -83,4 +82,4 @@ include 'includes/header-no-nav.php';
 </center>
 </div>
 </main>
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
