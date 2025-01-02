@@ -12,15 +12,13 @@
   - User cannot re-use registered emails!
 
 
-## TO ADD/FIX
+## DOCUMENTATIONS
   November 14, 2024
   - Make password req atleast 1 num 1 symbol and should be 8 characters long
-  - Fix info column
-  - Fix the whole design and concept of the website, it's ugly asf
 
 ## Address
 
-    ```arduino
+    ```
     localhost/cruz/registration_system/public/
     ```
 
