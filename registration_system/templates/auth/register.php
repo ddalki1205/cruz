@@ -1,5 +1,5 @@
 <?php
-$errors = ['fname' => '', 'lname' => '', 'email' => '', 'password' => '', 'confirm_password' => ''];
+$errors = ['fname' => '', 'lname' => '', 'email' => '', 'password' => '', 'confirm_password' => '', 'password_strength' => ''];
 $fn = $ln = $e = $p = '';
 
 // Check if the form was submitted
@@ -31,9 +31,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } elseif ($_POST['psword1'] !== $_POST['psword2']) {
         $errors['confirm_password'] = 'Your passwords do not match.';
     } else {
-        $p = trim($_POST['psword1']);
+        $password = trim($_POST['psword1']);
+    
+        // Validate password strength
+        $uppercase = preg_match('@[A-Z]@', $password);
+        $lowercase = preg_match('@[a-z]@', $password);
+        $number    = preg_match('@[0-9]@', $password);
+        $specialChars = preg_match('@[^\w]@', $password);
+    
+        if (!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 8) {
+            $errors['password_strength'] = 'Password should be at least 8 characters in length and include at least one uppercase letter, one number, and one special character.';
+        } else {
+            $p = $password; // Password passed all checks, proceed to assign or process
+        }
     }
-
+    
     // Check if the email already exists in the database
     if (empty(array_filter($errors))) {
         require('../../src/mysqli_connect.php'); // Connect to the database
@@ -100,6 +112,9 @@ include '../includes/header.php';
             <input type="password" name="psword1" class="input-field" id="psword1">
             <?php if (!empty($errors['password'])): ?>
                 <p class="error"><?php echo htmlspecialchars($errors['password']); ?></p>
+            <?php endif; ?>
+            <?php if (!empty($errors['password_strength'])): ?>
+                <p class="error"><?php echo htmlspecialchars($errors['password_strength']); ?></p>
             <?php endif; ?>
             <br>
     
