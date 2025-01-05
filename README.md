@@ -18,7 +18,7 @@
 
 ## Address
 
-    ```
+    ```arduino
     localhost/cruz/registration_system/public/
     ```
 
